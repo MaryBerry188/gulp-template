@@ -1,0 +1,30 @@
+.button {
+  cursor: pointer;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $color-main;
+  height: 75px;
+  padding: 30px 40px;
+  border: none;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  outline: none;
+}
+
+.button:active {
+  background-color: $color-hover;
+}
+
+@media (max-width: $tablet-width) {
+  .button {
+    height: 50px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 20px 40px;
+  }
+}

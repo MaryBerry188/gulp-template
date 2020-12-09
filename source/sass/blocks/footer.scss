@@ -1,0 +1,197 @@
+.footer {
+  display: flex;
+  margin-bottom: 75px;
+  padding-left: 32px;
+}
+
+.footer__block {
+  border-right: 1px solid $color-light-add;
+}
+
+.footer-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 19px;
+}
+
+.footer__city-group {
+  display: flex;
+}
+
+.footer__city {
+  min-width: 100px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-right: 28px;
+}
+
+.footer__city:last-child {
+  margin-right: 34px;
+}
+
+.footer__our-contacts {
+  margin-left: 88px;
+  padding-right: 40px;
+}
+
+.footer__about-corporate {
+  margin-left: 48px;
+  border: none;
+}
+
+.footer__promo {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(20, 21, 23, 0.5);
+}
+
+.footer__city-link {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: rgba(20, 21, 23, 0.5);
+}
+
+.footer__contact {
+  min-width: 260px;
+  display: flex;
+  color: $color-main;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+
+.footer__mail {
+  font-size: 14px;
+}
+
+.footer__mail--envelope {
+  stroke: $color-light-add;
+  margin-right: 17px;
+}
+
+.footer__mail-name {
+  display: none;
+}
+
+.footer__tel--phone {
+  stroke: $color-light-add;
+  stroke-width: 2;
+  margin-right: 11px;
+}
+
+@media (max-width: $tablet-width) {
+  .footer {
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+  }
+
+  .footer__city:last-child {
+    margin-right: 50px;
+  }
+
+  .footer__next-trip {
+    width: 55%;
+  }
+
+  .footer__our-contacts {
+    width: 30%;
+    margin-left: 50px;
+    padding-right: 0;
+    border: none;
+  }
+
+  .footer__contact {
+    min-width: 225px;
+  }
+
+  .footer__about-corporate {
+    border-top: 1px solid $color-light-add;
+    margin-left: 0;
+    margin-top: 30px;
+    padding-top: 30px;
+  }
+
+  .footer-title--corporate {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__promo {
+    text-align: center;
+  }
+
+  .footer__mail-full-address {
+    display: none;
+  }
+
+  .footer__mail-name {
+    display: inline;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .footer {
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+
+  .footer__block {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-light-add;
+    padding-bottom: 20px;
+  }
+
+  .footer__block:last-child {
+    border: none;
+    padding-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .footer__city-group {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .footer__city {
+    margin-right: 0;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+
+  .footer__city:last-child {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .footer__item {
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 10px;
+  }
+
+  .footer__city-link {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__our-contacts {
+    margin-left: 0;
+  }
+
+  .footer-title {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .footer__contact {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__contact:last-child {
+    margin-bottom: 0;
+  }
+}

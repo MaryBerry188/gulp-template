@@ -1,0 +1,174 @@
+.price {
+  display: flex;
+  margin-bottom: 138px;
+}
+
+
+.price__block-info {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  padding-top: 40px;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  border-radius: 6px;
+  background-color: $white;
+  margin-right: 30px;
+  width: 358px;
+}
+
+.price__block-info:hover {
+  border: 3px solid $color-main;
+  padding: 28px;
+  padding-top: 38px;
+
+  .price__header {
+    color: $color-main;
+  }
+
+  .price__check-img {
+    fill: $color-main;
+  }
+
+  .price__instuction {
+    border-bottom: 1px solid $color-main;
+  }
+}
+
+.price__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.price__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  margin: 0;
+}
+
+.price__cost {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 34px;
+  text-align: right;
+}
+
+.price__instuction {
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+}
+
+.price__advantages {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 54px;
+}
+
+.price__item {
+  display: flex;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.price__check-img {
+  margin-right: 16px;
+  margin-top: 5px;
+}
+
+.price__item-text {
+  margin: 0;
+}
+
+.price__button {
+  display: block;
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: $tablet-width) {
+  .price {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 125px;
+  }
+
+  .price__title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .price__about-block {
+    order: 0;
+  }
+
+  .price__block-info {
+    order: 1;
+    padding: 0;
+    margin-right: 0;
+    border-radius: 10px 10px 0 0;
+    padding-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 288px;
+  }
+
+  .price__block-info:hover {
+    padding: 28px 18px 0;
+  }
+
+  .price__header {
+    flex-direction: column;
+    margin-bottom: 11px;
+  }
+
+  .price__instuction {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .price__advantages {
+    margin-bottom: 30px;
+  }
+
+  .price__button {
+    margin-left: -21px;
+    margin-right: -21px;
+    width: auto;
+    transform: translateY(1px);
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .price {
+    margin-bottom: 20px;
+  }
+
+  .price__block-info {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .price__block-info:hover {
+    padding: 28px 18px 0;
+  }
+
+  .price__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .price__cost {
+    font-size: 25px;
+    line-height: 34px;
+  }
+}

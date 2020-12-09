@@ -1,0 +1,154 @@
+.question {
+  background: url("../img/question-bg-desktop@1x.jpg") no-repeat left / contain;
+  height: 455px;
+  margin-bottom: 170px;
+}
+
+@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+  .question {
+    background-image: url("../img/question-bg-desktop@2x.jpg");
+  }
+}
+
+.question__block {
+  background-color: $white;
+  border-radius: 5px;
+  box-shadow: 0 4px 30px rgba(41, 54, 66, 0.1);
+  padding: 50px;
+  width: 656px;
+  height: 315px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  transform: translateY(22%);
+}
+
+.question__title {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 32px;
+
+  text-align: center;
+  margin: 0;
+  margin-bottom: 15px;
+}
+
+.question__text {
+  font-size: 16px;
+  line-height: 24px;
+
+  text-align: center;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.question__form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+.question__input-field {
+  width: 270px;
+  padding: 15px;
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  outline: none;
+  margin-bottom: 25px;
+}
+
+.question__input-field::placeholder {
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.question__input-field--number {
+  padding-left: 50px;
+}
+
+.question__input-prefix {
+  font-size: 14px;
+  line-height: 17px;
+  position: absolute;
+  left: 23px;
+  top: 17px;
+  z-index: 10;
+}
+
+.question__requerd-symbol {
+  position: absolute;
+  left: 14px;
+  z-index: 10;
+}
+
+.question__button {
+  margin-left: auto;
+  margin-right: auto;
+  width: 176px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: $tablet-width) {
+  .question {
+    background-size: cover;
+  }
+
+  .question__block {
+    width: 658px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .question__button {
+    width: 250px;
+  }
+
+  .input__block {
+    width: 269px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .question {
+    background: none;
+    background-color: $color-light-grey;
+    width: 100%;
+    margin-bottom: 70px;
+  }
+
+  .question__block {
+    width: 100%;
+    box-shadow: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  .question__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  .question__text {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .question__input-field {
+    width: 100%;
+  }
+
+  .question__button {
+    width: 100%;
+  }
+
+  .input__block {
+    width: 100%;
+  }
+}

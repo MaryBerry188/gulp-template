@@ -1,0 +1,167 @@
+.visit-places__title {
+  position: relative;
+  width: 360px;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -1.245px;
+  margin-top: 200px;
+  margin-bottom: 64px;
+}
+
+.visit-places__title::before {
+  position: absolute;
+  content: "";
+
+  width: 228px;
+  height: 4px;
+
+  top: 185px;
+
+  background-color: $color-main;
+}
+
+.visit-places__instruction {
+  width: 360px;
+  margin-bottom: 56px;
+}
+
+.visit-places__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.visit-places__item {
+  position: relative;
+  margin-bottom: 101px;
+  line-height: 0;
+}
+
+.visit-places__item:nth-child(4) {
+  margin-left: auto;
+  margin-right: 120px;
+}
+
+.visit-places__item:nth-child(5) {
+  margin-right: auto;
+}
+
+.visit-places__overlay {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(20, 21, 23, 0.6);
+  z-index: 5;
+}
+
+.visit-places__item:hover .visit-places__overlay {
+  display: flex;
+}
+
+.visit-places__button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $white;
+  background-color: transparent;
+  border: 1px solid $white;
+  outline: none;
+  padding: 30px 25px;
+  cursor: pointer;
+}
+
+.visit-places__country {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.415px;
+
+  width: 215px;
+  position: absolute;
+  margin: 0;
+  bottom: 0;
+
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  padding: 15px 20px;
+
+  background-color: $white;
+  z-index: 10;
+}
+
+@media (max-width: 1106px) {
+  .visit-places__list {
+    justify-content: space-evenly;
+  }
+
+  .visit-places__item:nth-child(4) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .visit-places__item:nth-child(5) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .visit-places__title {
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    margin-top: 80px;
+  }
+
+  .visit-places__title::before {
+    display: none;
+  }
+
+  .visit-places__instruction {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.466667px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .visit-places__title {
+    width: auto;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+
+  .visit-places__instruction {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .visit-places__item {
+    margin-bottom: 35px;
+  }
+
+  .visit-places__item:last-child {
+    margin-bottom: 40px;
+  }
+}

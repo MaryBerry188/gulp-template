@@ -1,0 +1,131 @@
+.about-block {
+  width: 300px;
+  margin-left: auto;
+  margin-top: 120px;
+}
+
+.about-block__title {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 90px;
+  margin: 0;
+  margin-bottom: 53px;
+  position: relative;
+}
+
+.about-block__title::before {
+  position: absolute;
+  content: "";
+  width: 175px;
+  height: 3px;
+  top: 105px;
+  background-color: $color-main;
+}
+
+.about-block__text {
+  font-size: 16px;
+  line-height: 27px;
+  margin-bottom: 60px;
+}
+
+.about-block__contact {
+  margin-right: 30px;
+}
+
+.about-block__call-us {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+  margin: 0;
+  margin-bottom: 13px;
+  text-align: right;
+}
+
+.about-block__tel {
+  color: $black;
+  text-decoration: none;
+  font-size: 20px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.about-block__tel--phone {
+  stroke: $color-main;
+}
+
+@media (max-width: $tablet-width) {
+  .about-block {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .about-block__title {
+
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    margin-bottom: 20px;
+  }
+
+  .about-block__title::before {
+    display: none;
+  }
+
+  .about-block__text {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .about-block__contact {
+    margin-right: 0;
+  }
+
+  .about-block__call-us {
+    text-align: center;
+  }
+
+  .about-block__tel {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .about-block {
+    margin-bottom: 40px;
+  }
+
+  .about-block__title {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  .about-block__text {
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 20px;
+  }
+
+  .about-block__call-us {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 10px;
+  }
+
+  .about-block__tel {
+    font-size: 18px;
+    line-height: 32px;
+    color: $color-main;
+    text-decoration: underline;
+  }
+
+  .about-block__tel--phone {
+    display: none;
+  }
+}
